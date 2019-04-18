@@ -1,26 +1,29 @@
-rebar_gleam
-=====
+# rebar_gleam
 
-A rebar plugin
+A rebar3 plugin that adds templates for generating [Gleam](https://gleam.run)
+projects.
 
-Build
------
+## Installation
 
-    $ rebar3 compile
+Add the plugin to your global rebar config located at `~/.config/rebar3/rebar.config`.
 
-Use
----
+If you do not have a file at `~/.config/rebar3/rebar.config` please create it
+and add the following:
 
-Add the plugin to your rebar config:
+```erlang
+{plugins, [
+    {rebar_gleam, {git, "https://github.com/gleam-lang/rebar_gleam"}},
+]}.
+```
 
-    {plugins, [
-        { rebar_gleam, ".*", {git, "git@host:user/rebar_gleam.git", {tag, "0.1.0"}}}
-    ]}.
+If you wish to upgrade to the latest version of this plugin run this command:
 
-Then just call your plugin directly in an existing application:
+```shell
+rebar3 as global plugins upgrade rebar_gleam
+```
 
+## Usage
 
-    $ rebar3 rebar_gleam
-    ===> Fetching rebar_gleam
-    ===> Compiling rebar_gleam
-    <Plugin Output>
+```
+rebar3 new gleam_lib my_amazing_application
+```
