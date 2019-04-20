@@ -12,7 +12,7 @@ and add the following:
 
 ```erlang
 {plugins, [
-    {rebar_gleam, {git, "https://github.com/gleam-lang/rebar_gleam"}},
+    {rebar_gleam, {git, "https://github.com/gleam-lang/rebar_gleam"}}
 ]}.
 ```
 
