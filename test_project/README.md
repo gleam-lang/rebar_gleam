@@ -1,6 +1,7 @@
-# {{name}}
+# test_project
 
-{{desc}}
+
+A Gleam program
 
 
 ## Quick start

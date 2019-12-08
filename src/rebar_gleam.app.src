@@ -1,5 +1,5 @@
 {application, rebar_gleam,
- [{description, "A rebar plugin"},
+ [{description, "Build Gleam projects with rebar3"},
   {vsn, "0.1.0"},
   {registered, []},
   {applications,
@@ -10,5 +10,5 @@
   {modules, []},
 
   {licenses, ["Apache 2.0"]},
-  {links, []}
+  {links, [{"GitHub", "https://github.com/gleam-lang/rebar_gleam"}]}
  ]}.
