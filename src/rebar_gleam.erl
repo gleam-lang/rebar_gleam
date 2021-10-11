@@ -12,7 +12,7 @@ init(State) ->
     {ok, State3}.
 
 provider_do(State, Do) ->
-  case rebar_utils:sh("gleam build .", [use_stdout, return_on_error]) of
+  case rebar_utils:sh("gleam build", [use_stdout, return_on_error]) of
     {ok, _} ->
       Do(State);
 
